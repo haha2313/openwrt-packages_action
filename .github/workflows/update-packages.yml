@@ -44,7 +44,7 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         chmod +x ${{matrix.target}}.sh
-        git clone -b ${{matrix.target}} https://github.com/liuran001/openwrt-packages.git ${{matrix.target}}
+        git clone -b ${{matrix.target}} https://github.com/haha2313/openwrt-packages-1.git ${{matrix.target}}
         cd ${{matrix.target}}
         rm -Rf *
         git rm --cache *
@@ -58,7 +58,7 @@ jobs:
         cd $GITHUB_WORKSPACE/${{matrix.target}}
         git add .
         git commit -m "update$(TZ='Asia/Shanghai' date +@%Y%m%d)"
-        git push --quiet "https://${{ secrets.TOKEN }}@github.com/liuran001/openwrt-packages.git" HEAD:${{matrix.target}} || echo 'Nothing to do.'
+        git push --quiet "https://${{ secrets.TOKEN }}@github.com/haha2313/openwrt-packages-1.git" HEAD:${{matrix.target}} || echo 'Nothing to do.'
  
 
  
