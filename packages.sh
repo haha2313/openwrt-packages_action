@@ -18,6 +18,10 @@ rm -rf .svn
 svn co https://github.com/fw876/helloworld/trunk ./
 rm -rf .svn
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk ./
+
+rm -rf .svn
+svn co https://github.com/project-lede/luci-app-godproxy/trunk ./
+
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns
 svn co https://github.com/kenzok8/openwrt-packages/trunk/smartdns
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-argon_new
